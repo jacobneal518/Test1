@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ContentProviderExample</string>
+    <string name="popName">Pop Name</string>
+    <string name="popNumber">Pop Number</string>
+    <string name="query">Query All</string>
+    <string name="update">Update</string>
+    <string name="insert">Insert</string>
+    <string name="previous"> &lt; </string>
+    <string name="dashLabel">-</string>
+    <string name="next"> &gt; </string>
+    <string name="delete">Delete</string>
+    <string name="authority">com.example.provider</string>
+    <string name="read_permission">com.example.FunkoPOPProvider.permission.READ_PERMISSION</string>
+    <string name="write_permission">com.example.FunkoPOPProvider.permission.WRITE_PERMISSION</string>
+</resources>

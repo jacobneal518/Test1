@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="12dp"
+        android:text="Price"
+        app:layout_constraintEnd_toStartOf="@+id/popNumber"
+        app:layout_constraintTop_toBottomOf="@+id/fNameLabel" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/popName"
+        app:layout_constraintTop_toBottomOf="@+id/popName" />
+
+    <TextView
+        android:id="@+id/ultimate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="12dp"
+        android:text="Ultimate"
+        app:layout_constraintEnd_toStartOf="@+id/popNumber"
+        app:layout_constraintTop_toBottomOf="@+id/fNameLabel" />
+
+    <EditText
+        android:id="@+id/ultimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:hint="Ultimate"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/popName"
+        app:layout_constraintTop_toBottomOf="@+id/popName" />
+
+    <TextView
+        android:id="@+id/on_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="12dp"
+        android:text="On(1:true, 0:false)"
+        app:layout_constraintEnd_toStartOf="@+id/popNumber"
+        app:layout_constraintTop_toBottomOf="@+id/fNameLabel" />
+
+    <EditText
+        android:id="@+id/popOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="On"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/popName"
+        app:layout_constraintTop_toBottomOf="@+id/popName" />
+
+    <TextView
+        android:id="@+id/fandom_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="12dp"
+        android:text="Fandom"
+        app:layout_constraintEnd_toStartOf="@+id/popNumber"
+        app:layout_constraintTop_toBottomOf="@+id/fNameLabel" />
+
+    <EditText
+        android:id="@+id/fandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="Fandom"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/popName"
+        app:layout_constraintTop_toBottomOf="@+id/popName" />
+
+    <TextView
+        android:id="@+id/popType_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="Pop Type"
+        app:layout_constraintEnd_toStartOf="@+id/popNumber"
+        app:layout_constraintTop_toBottomOf="@+id/fNameLabel" />
+
+    <EditText
+        android:id="@+id/popType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Pop Type"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/popName"
+        app:layout_constraintTop_toBottomOf="@+id/popName" />
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insert"
+        app:layout_constraintBaseline_toBaselineOf="@+id/updateButton"
+        app:layout_constraintStart_toStartOf="@+id/popNumber" />
+
+    <Button
+        android:id="@+id/queryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/query"
+        app:layout_constraintStart_toStartOf="@+id/insertButton"
+        app:layout_constraintTop_toBottomOf="@+id/insertButton" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:text="@string/update"
+        app:layout_constraintStart_toEndOf="@+id/insertButton"
+        app:layout_constraintTop_toBottomOf="@+id/popNumber" />
+
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/delete"
+        app:layout_constraintStart_toEndOf="@+id/queryButton"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton" />
+
+    <EditText
+        android:id="@+id/popName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/popName"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </EditText>
+
+    <EditText
+        android:id="@+id/popNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/popNumber"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/popName"
+        app:layout_constraintTop_toBottomOf="@+id/popName" />
+
+
+
+    <TextView
+        android:id="@+id/fNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/popName"
+        app:layout_constraintEnd_toStartOf="@+id/popName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/popNumber_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/popNumber"
+        app:layout_constraintEnd_toStartOf="@+id/popNumber"
+        app:layout_constraintTop_toBottomOf="@+id/fNameLabel" />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="540dp"
+        android:text="@string/previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/unique_id"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/separator"
+        android:layout_width="1dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dashLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/unique_id"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/popNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/separator"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/separator2"
+        android:layout_width="1dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dashLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/popNameTV"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/popNumberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/separator2"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/separator3"
+        android:layout_width="1dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dashLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/popNumberTV"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/popTypeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/separator3"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/separator4"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dashLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/popTypeTV"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/fandomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/separator4"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/popOnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id" />
+
+    <TextView
+        android:id="@+id/separator5"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dashLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/popOnTV"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id"/>
+
+    <TextView
+        android:id="@+id/ultimateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/separator5"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id"/>
+
+    <TextView
+        android:id="@+id/separator6"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dashLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/ultimateTV"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id"/>
+
+    <TextView
+        android:id="@+id/priceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        app:layout_constraintStart_toEndOf="@+id/separator6"
+        app:layout_constraintTop_toBottomOf="@+id/unique_id"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
